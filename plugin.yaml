@@ -1,0 +1,19 @@
+name: new-room-connector
+label: New Room Hermes Connector
+kind: standalone
+version: 0.1.0-rc.6
+description: >
+  Identity-preserving Hermes adapter for New Room. Canonical Room events
+  enter the named Hermes profile session; the adapter never calls a model
+  endpoint directly. Ordinary messaging channels stay outside the Room
+  protocol and never become membership identity or routing authority.
+author: tokenwerk
+provides_tools:
+  - new_room_context
+  - new_room_post
+provides_hooks:
+  - pre_llm_call
+homepage: https://github.com/tojdpg/new-room
+tags:
+  - new-room
+  - connector
